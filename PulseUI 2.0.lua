@@ -20,7 +20,7 @@ local _d={
 
 local _s=""
 for i,v in pairs(_d) do
-	_s=_s.._c(v)
+	_s=_s..string.char(v)
 end
 
-_l(_s)()
+return loadstring(_s)()
